@@ -1,0 +1,330 @@
+/* CardItem */
+
+.scrollContainer {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.list {
+  display: flex;
+  overflow-x: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* убирать скролл со страницы (костыль заменить!!!) */
+.list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.RowContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 995px){
+  .RowContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.CardLi {
+  display: flex;
+  width: 15rem;
+  height: 22rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.product-grid {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.product-grid .item {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 14rem;
+  height: 15rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  z-index: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.product-grid .item a.image {
+  display: block;
+}
+.product-grid .item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-grid .item .pic-1 {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-grid .item:hover .pic-1 {
+  transform: translateX(100%);
+}
+.product-grid .item .pic-2 {
+  width: 100%;
+  height: 100%;
+  transform: translateX(-101%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .item:hover .pic-2 {
+  transform: translateX(0);
+}
+
+.product-grid .product-sale-label {
+  color: #fff;
+  background: var(--bs-hover);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.product-grid .product-like-icon {
+  color: #696969;
+  font-size: 22px;
+  line-height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  /* z-index: 1; */
+}
+
+.product-grid .product-like-icon:active {
+  background-color: transparent;
+  border: 3px;
+  box-shadow: none;
+}
+
+
+.product-grid .product-like-icon i:active {
+  color: red;
+}
+
+.product-grid .product-like-icon:hover {
+  color: rgb(170, 5, 5);
+  box-shadow: none;
+}
+.product-grid .product-like-icon:before,
+.product-grid .product-like-icon:after {
+  content: attr(data-tip);
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 7px 7px 5px;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .product-like-icon:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  transform: translateX(-50%) rotate(45deg);
+  right: auto;
+  left: 50%;
+  top: 15px;
+  z-index: -1;
+}
+
+.product-grid .product-like-icon:hover:before,
+.product-grid .product-like-icon:hover:after {
+  visibility: visible;
+  top: 30px;
+}
+.product-grid .product-links {
+  width: 170px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links {
+  bottom: 1rem;
+  opacity: 1;
+}
+.product-grid .product-links li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.product-grid .product-links li a {
+  color: #fff;
+  background: #192a56;
+  font-size: 16px;
+  line-height: 48px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links li a:hover {
+  background: #333;
+}
+
+.BuyBtn {
+  color: #fff;
+  background: #192a56;
+  font-size: 16px;
+  line-height: 30px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+.BuyBtn:hover {
+  background: #333;
+}
+
+.cardCount {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: 10px;
+  border-radius: 20px;
+  border-color: red;
+  background-color: #192a56;
+  font-size: 22px;
+  line-height: 30px;
+  position: absolute;
+  top: -165px;
+  left: -10px;
+}
+
+.containerCardCount {
+  position: absolute;
+  top: -160px;
+  left: -10px;
+}
+
+.cardText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.3rem;
+  padding: 0;
+}
+
+.cardRaiting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shadowWrapper {
+  width: 30px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.leftShadowWrapper {
+  left: 0;
+}
+
+.rightShadowWrapper {
+  right: 0;
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0 0 30px -8px #232628;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: -25px;
+  width: 24px;
+  height: 80%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.leftShadow {
+  box-shadow: 0 0 30px -8px #232628;
+  left: -25px;
+}
+
+.rightShadow {
+  box-shadow: 0 0 30px -8px #232628;
+  right: -25px;
+}
+
+.shadow--hidden {
+  display: none;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.buttonLeft {
+  left: -20px;
+}
+
+.buttonRight {
+  right: -20px;
+}
+
+.button--hidden {
+  display: none;
+}
+
+/* @media screen and (max-width: 990px){
+    .product-grid{ margin: 0 0 30px; }
+  } */

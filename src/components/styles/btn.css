@@ -1,0 +1,139 @@
+/* NavBar */
+
+.NavBar-Btn {
+  margin-left: 1rem;
+}
+
+.DropdownBtn .btn-primary {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-color: black;
+  box-shadow: none;
+}
+
+.DropdownBtn .btn-primary:hover {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  /* transform: translateY(-3px) */
+  background-color: #d3d4d5;
+  color: black;
+}
+
+.DropdownBtn .btn-primary:focus {
+  background-color: #595377;
+  color: white;
+}
+
+.actionDpropdownBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.actionDpropdownBtn:hover {
+  background-color: #d3d4d5;
+}
+
+.actionDpropdownBtn:active {
+  background-color: #595377;
+}
+
+/* Counter.jsx */
+
+.CounterBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  float: left;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  height: 3rem;
+  width: 8rem;
+}
+
+.CounterBtn .btnCount {
+  border: none;
+  background-color: transparent;
+  width: 3em;
+}
+
+.CounterBtn .btnCount:hover {
+  color: red;
+}
+
+.buyBtn {
+  width: 16rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #595377;
+  color: white;
+}
+
+.buyBtn:hover:active {
+  background-color: #595377;
+  transition: all 0s;
+}
+
+/* EmptyBasket */
+
+.btnClose {
+  background-color: #e1e1e1;
+  border-color: black;
+  color: black;
+}
+
+.btnClose:hover {
+  background-color: #595377;
+}
+
+/* likeCard */
+
+.BtnInLiked {
+  width: 70px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  background-color: #eaeff2;
+}
+
+.BtnInLiked:focus {
+  background-color: none;
+}
+
+.BtnInLiked:active {
+  background-color: none;
+}
+
+.modal-header .btn-close:focus {
+  box-shadow: none;
+}
+
+/* общий btn в scss */
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #595377;
+  transition: all 0s;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  background-color: #426e58e0;
+}
+
+.btn-primary:hover {
+  --bs-btn-hover-bg: #2f2872;
+  color: #e1e1e1;
+}
+
+.CardLi .item .product-like-icon {
+  background-color: transparent;
+}
+
+.btn-primary:focus {
+  background-color: #3f3697;
+}

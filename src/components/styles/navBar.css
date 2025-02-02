@@ -1,0 +1,96 @@
+.NavBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.Logo {
+  opacity: 1;
+  outline: 0;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media (max-width: 1085px) {
+  .Logo {
+    font-size: 13px;
+    height: 80px;
+    width: 115px;
+    margin-left: 40px;
+    font-size: 14px;
+  }
+  .ml-auto {
+    display: none;
+  }
+}
+
+.Logo:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.Logo:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.Logo::before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #595377;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.7s;
+  position: relative;
+  background: #5953770c;
+  content: attr(logostyle);
+  transform: translateY(0) rotateX(0);
+  border-radius: 6px;
+  text-shadow: 0 1px 3px #595377;
+  box-shadow: 0 2px 3px #59537767;
+}
+
+.Logo::after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #67ff99;
+  display: block;
+  transition: 0.7s;
+  position: absolute;
+  background: #59537749;
+  content: attr(logostyle);
+  transform: translateY(-50%) rotateX(90deg);
+  border-radius: 6px;
+  text-shadow: 0 2px 4px #595377;
+  box-shadow: 0 3px 7px #59537767;
+}
+
+/* burgerModal */
+
+.burgerModalBtn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+@media (min-width: 1085px) {
+  .burgerModalBtn {
+    display: none;
+  }
+}
