@@ -1,0 +1,12 @@
+.MainCarouselText {
+    color: rgb(0, 0, 0);
+    top: 1.25rem;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
