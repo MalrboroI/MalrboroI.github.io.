@@ -1,0 +1,17 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "mdb-react-ui-kit/dist/css/mdb.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./btn.css";
+@import "./navBar.css";
+@import "./sideBar.css";
+@import "./Img.css";
+@import "./text.css";
+@import "./light.css";
+@import "./carousel.css";
+@import "./footer.css";
+@import "./cardItem.css";
+@import "./searchToProduct.css";
+@import "./productPage.css";
+@import "./productCard.css";
+@import "./basket.css";
+/* @import "./gif.scss"; */

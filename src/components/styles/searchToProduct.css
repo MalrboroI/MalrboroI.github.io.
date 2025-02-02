@@ -1,0 +1,95 @@
+.inputSearch {
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.inputSearchValue {
+  border: none;
+  font-size: 2rem;
+  min-width: 26rem;
+}
+
+.inputSearchValue:hover::placeholder {
+  color: #595377;
+  transition: color 0.5s ease;
+}
+
+.inputSearchValue:focus {
+  outline: none;
+}
+
+.searchRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchProductPage {
+  margin: 0;
+}
+
+.searchRowContainer {
+  margin: 3rem 0 3rem 16rem;
+}
+
+/* SearchToastsBtn: кнопка открытия фильтра */
+
+.searchToastsBtn {
+  position: absolute;
+  top: 1.3rem;
+  left: 0;
+}
+
+.searchBtn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.searchBtn:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.searchBtn:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.searchBtn::after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  display: block;
+  transition: 0.8s;
+  position: absolute;
+  content: url(../../img/Navigation/filterIconHover.svg);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.searchBtn::before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.8s;
+  position: relative;
+  content: url(../../img/Navigation/filterIcon.svg);
+  transform: translateY(0) rotateX(0);
+}
+
+/* SearchToastsBtn: всплытия модалки  */
+
+.Toast {
+  position: absolute;
+  left: 1.7rem;
+  min-width: 19rem;
+}

@@ -1,0 +1,31 @@
+body {
+  font-family: "Faculty Glyphic", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 450px;
+}
+
+@media (max-width: 995px) {
+  body{
+    padding-bottom: 550px;
+  }
+}
+
+@media (max-width: 766px) {
+  body{
+    padding-bottom: 985px;
+  }
+}
+
+.MainCarouselText p {
+  font-size: large;
+}
+
+.tabText {
+  text-align: justify;
+}
+
+.modalText {
+  font-size: 2rem;
+  color: #595377;
+}
