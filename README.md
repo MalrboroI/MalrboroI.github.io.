@@ -1,8 +1,8 @@
 # Project-Shop
 
-Page on http: https://3xv4zy-3000.csb.app/
+Online page on http: https://3xv4zy-3000.csb.app/
 
-Online version of the page in codesandbox: https://codesandbox.io/p/github/MalrboroI/Project-Shop/main?import=true
+CodeSandBox page with the repository: https://codesandbox.io/p/github/MalrboroI/Project-Shop/main?import=true
 
 The website is a multi-page online store developed in Visual Studio Code using the React library. The project is built on functional components with the addition of classes for implementing registration and authorization. Key features and functionalities of the website include:
 
