@@ -1,4 +1,7 @@
 # Project-Shop
+
+Online version of the page: https://codesandbox.io/p/github/MalrboroI/Project-Shop/main?import=true
+
 The website is a multi-page online store developed in Visual Studio Code using the React library. The project is built on functional components with the addition of classes for implementing registration and authorization. Key features and functionalities of the website include:
 
 Multi-Page Structure:
