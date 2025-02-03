@@ -24,17 +24,17 @@ export default function burgerModal({
   const handleShow = () => setShow(true);
 
   return (
-    <>
+    <div className="burgerModal">
       <button onClick={handleShow} className="burgerModalBtn">
-        <img src={BurgerModal} alt="BurgerModal" />
+        <img className="burgerModalImg" src={BurgerModal} alt="BurgerModal" />
       </button>
       <Offcanvas
-        className="offcanvas-top"
+        className="offcanvas-top burgerModal"
         show={show}
         onHide={handleClose}
         placement="top"
       >
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header>
           <Offcanvas.Title>Навигация</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -46,13 +46,13 @@ export default function burgerModal({
             >
               Авторизация
             </Button>
-            <Button
+            {/* <Button
               variant={"light"}
               onClick={() => logOut()}
               className="NavBar-Btn"
             >
               Выйти
-            </Button>
+            </Button> */}
             <SearchToProduct />
             <Button
               className="NavBar-Btn"
@@ -71,17 +71,17 @@ export default function burgerModal({
               {/* <img className="homeBtn" src={productBasket} alt="Basket" />
                   {cardToBasket.length} */}
             </Button>
-            <div>
-              <LikedProductModal
-                cardToLiked={cardToLiked}
-                setCardToLiked={setCardToLiked}
-                cardToBasket={cardToBasket}
-                setCardToBasket={setCardToBasket}
-              ></LikedProductModal>
-            </div>
+            {/* <div > */}
+            <LikedProductModal
+              cardToLiked={cardToLiked}
+              setCardToLiked={setCardToLiked}
+              cardToBasket={cardToBasket}
+              setCardToBasket={setCardToBasket}
+            ></LikedProductModal>
+            {/* </div> */}
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </div>
   );
 }

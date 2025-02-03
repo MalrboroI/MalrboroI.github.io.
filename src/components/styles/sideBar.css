@@ -46,6 +46,14 @@
   cursor: pointer;
 }
 
+@media (max-width: 1085px) {
+
+  .openSideBarSvg{
+    width: 5rem;
+    height: 3rem;
+  }
+}
+
 .NavIcon {
   color: white;
   margin-left: 2rem;

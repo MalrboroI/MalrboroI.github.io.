@@ -26,7 +26,7 @@ export default function Sidebar() {
       <IconContext.Provider value={{}}>
         <Nav className="customSideBar">
           <Nav to="#" className="openSideBar">
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars className="openSideBarSvg" onClick={showSidebar} />
           </Nav>
         </Nav>
 

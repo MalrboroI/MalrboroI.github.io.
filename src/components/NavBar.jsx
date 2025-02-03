@@ -35,7 +35,7 @@ export default function NavBar() {
   return (
     <>
       <Navbar className="NavBar">
-        <Container>
+        <Container className="NavBarContainer">
           <NavLink
             className="Logo"
             to={SHOP_ROUTE}

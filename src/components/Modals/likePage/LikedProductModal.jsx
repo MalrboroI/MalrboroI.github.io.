@@ -11,7 +11,6 @@ export default function LikedProductModal({
   cardToBasket,
   setCardToBasket,
 }) {
-
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
 
@@ -26,14 +25,15 @@ export default function LikedProductModal({
 
   return (
     <>
-      {/* {values.map((v, idx) => ( */}
-      <Button  data-tip="Избранное" className="NavBar-Btn" variant={"light"} onClick={() => handleShow(true)}>
+      <Button
+        data-tip="Избранное"
+        className="NavBar-Btn burgerLikedBtn"
+        variant={"light"}
+        onClick={() => handleShow(true)}
+      >
         <img className="homeBtn" src={heart} alt="Basket" />
-        {/* {typeof v === 'string' && `below ${v.split('-')[0]}`} */}
         {cardToLiked.length}
       </Button>
-
-      {/* //   ))} */}
       <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <Modal.Title className="modalText">Избранное</Modal.Title>

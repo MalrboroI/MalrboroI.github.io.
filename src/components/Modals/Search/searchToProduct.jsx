@@ -56,7 +56,7 @@ export default function SearchToProduct() {
   return (
     <>
       <Button
-        className="NavBar-Btn"
+        className="NavBar-Btn burgerSearchBtn"
         variant={"light"}
         onClick={() => handleShow(true)}
       >

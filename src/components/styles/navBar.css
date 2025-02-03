@@ -21,14 +21,32 @@
 
 @media (max-width: 1085px) {
   .Logo {
-    font-size: 13px;
-    height: 80px;
-    width: 115px;
-    margin-left: 40px;
-    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
+
   .ml-auto {
     display: none;
+  }
+
+  .NavBar-Btn {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #595377;
+  }
+
+  .burgerSearchBtn::before {
+    position: relative;
+    color: black;
+    opacity: 1;
+    content: "Поиск ";
+  }
+
+  .burgerLikedBtn::before {
+    position: relative;
+    color: black;
+    opacity: 1;
+    content: "Избранное ";
   }
 }
 
@@ -45,6 +63,9 @@
   top: 0;
   left: 0;
   opacity: 1;
+  height: 3rem;
+  width: 22rem;
+  font-size: 20px;
   color: #595377;
   display: block;
   padding: 0 30px;
@@ -60,10 +81,10 @@
 }
 
 .Logo::after {
-  top: 0;
-  left: 0;
   opacity: 0;
-  width: 100%;
+  height: 3rem;
+  font-size: 20px;
+  width: 22rem;
   color: #67ff99;
   display: block;
   transition: 0.7s;
@@ -87,6 +108,15 @@
   position: relative;
   letter-spacing: 1px;
   display: inline-block;
+}
+
+.offcanvas-header {
+  justify-content: center;
+}
+
+.burgerModalImg {
+  width: 4rem;
+  height: 4rem;
 }
 
 @media (min-width: 1085px) {
