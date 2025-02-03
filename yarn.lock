@@ -11023,6 +11023,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"malrboroi.github.io@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "malrboroi.github.io@workspace:."
+  dependencies:
+    "@fortawesome/fontawesome-free": "npm:^6.6.0"
+    "@material-ui/core": "npm:^4.12.4"
+    "@popperjs/core": "npm:^2.11.8"
+    "@testing-library/jest-dom": "npm:^5.17.0"
+    "@testing-library/react": "npm:^13.4.0"
+    "@testing-library/user-event": "npm:^13.5.0"
+    "@types/lodash": "npm:^4.17.13"
+    "@types/lodash.debounce": "npm:^4.0.9"
+    "@types/react": "npm:^18.3.12"
+    "@types/react-dom": "npm:^18.3.1"
+    babel-cli: "npm:^6.26.0"
+    bootstrap: "npm:^5.3.3"
+    classnames: "npm:^2.5.1"
+    eslint-config-react-app: "npm:^7.0.1"
+    lodash: "npm:^4.17.21"
+    lodash.debounce: "npm:^4.0.8"
+    mdb-react-ui-kit: "npm:^9.0.0"
+    mobx: "npm:^6.13.5"
+    mobx-react-lite: "npm:^4.0.7"
+    node-sass: "npm:^9.0.0"
+    react: "npm:^18.3.1"
+    react-app: "npm:^1.1.2"
+    react-bootstrap: "npm:^2.10.5"
+    react-dom: "npm:^18.3.1"
+    react-icons: "npm:^5.3.0"
+    react-router-dom: "npm:6"
+    react-scripts: "npm:^5.0.1"
+    react-select: "npm:^5.9.0"
+    styled-components: "npm:^6.1.13"
+    typescript: "npm:^5.6.3"
+    web-vitals: "npm:^2.1.4"
+  languageName: unknown
+  linkType: soft
+
 "map-cache@npm:^0.2.2":
   version: 0.2.2
   resolution: "map-cache@npm:0.2.2"
@@ -13336,44 +13374,6 @@ __metadata:
   checksum: 10c0/bec089239487833d46b59d80327a1605e1c5287eaad770a291add7f45fda1bb5e28b38e0e061add0a1d0ee0984788ce74fa394d345eed1c420cacf392c554367
   languageName: node
   linkType: hard
-
-"project1@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "project1@workspace:."
-  dependencies:
-    "@fortawesome/fontawesome-free": "npm:^6.6.0"
-    "@material-ui/core": "npm:^4.12.4"
-    "@popperjs/core": "npm:^2.11.8"
-    "@testing-library/jest-dom": "npm:^5.17.0"
-    "@testing-library/react": "npm:^13.4.0"
-    "@testing-library/user-event": "npm:^13.5.0"
-    "@types/lodash": "npm:^4.17.13"
-    "@types/lodash.debounce": "npm:^4.0.9"
-    "@types/react": "npm:^18.3.12"
-    "@types/react-dom": "npm:^18.3.1"
-    babel-cli: "npm:^6.26.0"
-    bootstrap: "npm:^5.3.3"
-    classnames: "npm:^2.5.1"
-    eslint-config-react-app: "npm:^7.0.1"
-    lodash: "npm:^4.17.21"
-    lodash.debounce: "npm:^4.0.8"
-    mdb-react-ui-kit: "npm:^9.0.0"
-    mobx: "npm:^6.13.5"
-    mobx-react-lite: "npm:^4.0.7"
-    node-sass: "npm:^9.0.0"
-    react: "npm:^18.3.1"
-    react-app: "npm:^1.1.2"
-    react-bootstrap: "npm:^2.10.5"
-    react-dom: "npm:^18.3.1"
-    react-icons: "npm:^5.3.0"
-    react-router-dom: "npm:6"
-    react-scripts: "npm:^5.0.1"
-    react-select: "npm:^5.9.0"
-    styled-components: "npm:^6.1.13"
-    typescript: "npm:^5.6.3"
-    web-vitals: "npm:^2.1.4"
-  languageName: unknown
-  linkType: soft
 
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
