@@ -11,7 +11,6 @@ export default function ProductPage() {
   const { dataArray } = useContext(Context);
   const params = useParams();
   const routeTypeParam = params.types;
-
   const [selectedSort, setSelectedSort] = useState([]);
   const [sliderValue, setSliderValue] = useState([0, 30000]);
 

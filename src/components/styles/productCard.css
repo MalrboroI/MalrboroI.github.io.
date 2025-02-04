@@ -42,3 +42,37 @@
   color: #595377;
 }
 
+@media (max-width: 1400px) {
+  .productCardRow{
+    display: flex;
+    justify-content: center;
+  }
+  .productCardImg{
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgPage{
+    width: 50rem;
+    height: 40rem;
+  }
+
+  .cardProductPage{
+    width: 50rem;
+    height: 40rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 993px) {
+  .imgPage{
+    width: 33rem;
+    height: 28rem;
+  }
+
+  .cardProductPage{
+    width: 33rem;
+    height: 28rem;
+    margin: 0;
+  }
+}

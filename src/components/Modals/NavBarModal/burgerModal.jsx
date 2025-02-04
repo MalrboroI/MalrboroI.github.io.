@@ -9,6 +9,7 @@ import {
 } from "../../../utils/constans";
 import SearchToProduct from "../Search/searchToProduct";
 import LikedProductModal from "../../Modals/likePage/LikedProductModal";
+import productBasket from "../../../img/productCard.svg"
 import BurgerModal from "../../../img/Navigation/burgerModal.svg";
 
 export default function burgerModal({
@@ -68,8 +69,8 @@ export default function burgerModal({
               onClick={() => navigate(BASKET_ROUTE)}
             >
               Корзина товаров
-              {/* <img className="homeBtn" src={productBasket} alt="Basket" />
-                  {cardToBasket.length} */}
+              <img className="homeBtn" src={productBasket} alt="Basket" />
+                  {cardToBasket.length}
             </Button>
             {/* <div > */}
             <LikedProductModal

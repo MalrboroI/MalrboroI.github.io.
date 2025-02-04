@@ -6,13 +6,13 @@ body {
 }
 
 @media (max-width: 995px) {
-  body{
+  body {
     padding-bottom: 550px;
   }
 }
 
 @media (max-width: 766px) {
-  body{
+  body {
     padding-bottom: 985px;
   }
 }
@@ -29,3 +29,4 @@ body {
   font-size: 2rem;
   color: #595377;
 }
+

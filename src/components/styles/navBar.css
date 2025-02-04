@@ -48,6 +48,7 @@
     opacity: 1;
     content: "Избранное ";
   }
+
 }
 
 .Logo:hover:after {
@@ -63,8 +64,8 @@
   top: 0;
   left: 0;
   opacity: 1;
-  height: 3rem;
-  width: 22rem;
+  height: 44px;
+  width: 17rem;
   font-size: 20px;
   color: #595377;
   display: block;
@@ -82,9 +83,9 @@
 
 .Logo::after {
   opacity: 0;
-  height: 3rem;
+  height: 44px;
+  width: 17rem;
   font-size: 20px;
-  width: 22rem;
   color: #67ff99;
   display: block;
   transition: 0.7s;
@@ -122,5 +123,45 @@
 @media (min-width: 1085px) {
   .burgerModalBtn {
     display: none;
+  }
+}
+
+@media (max-width: 715px) {
+  .Logo::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    height: 3rem;
+    width: 15rem;
+    font-size: 18px;
+    color: #595377;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.7s;
+    position: relative;
+    background: #5953770c;
+    content: attr(logostyle);
+    transform: translateY(0) rotateX(0);
+    border-radius: 6px;
+    text-shadow: 0 1px 3px #595377;
+    box-shadow: 0 2px 3px #59537767;
+  }
+
+  .Logo::after {
+    opacity: 0;
+    height: 3rem;
+    font-size: 18px;
+    width: 15rem;
+    color: #67ff99;
+    display: block;
+    transition: 0.7s;
+    position: absolute;
+    background: #59537749;
+    content: attr(logostyle);
+    transform: translateY(-50%) rotateX(90deg);
+    border-radius: 6px;
+    text-shadow: 0 2px 4px #595377;
+    box-shadow: 0 3px 7px #59537767;
   }
 }

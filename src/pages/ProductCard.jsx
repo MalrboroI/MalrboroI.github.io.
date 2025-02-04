@@ -36,9 +36,9 @@ const ProductCard = () => {
 
   return (
     <Container className="mt-5">
-      <Row>
-        {/* Чтобы колонки не переходили на новую строку, обернем все в Row */}
-        <Col md-4>
+      <Row className="productCardRow">
+        {/* Чтобы колонки не переходили на новую строку, оберачиваем все в Row */}
+        <Col md-4 className="productCardImg">
           <Image className="imgPage" src={product.img1} />
         </Col>
         <Card className="cardProductPage">

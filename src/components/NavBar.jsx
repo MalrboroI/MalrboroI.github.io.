@@ -19,6 +19,7 @@ import { CardContext } from "../App";
 import LikedProductModal from "./Modals/likePage/LikedProductModal";
 import SearchToProduct from "./Modals/Search/searchToProduct";
 import BurgerModal from "../components/Modals/NavBarModal/burgerModal";
+import Sidebar from "./SideBar/Sidebar";
 
 export default function NavBar() {
   const navigate = useNavigate();
@@ -36,6 +37,7 @@ export default function NavBar() {
     <>
       <Navbar className="NavBar">
         <Container className="NavBarContainer">
+          <Sidebar />
           <NavLink
             className="Logo"
             to={SHOP_ROUTE}
