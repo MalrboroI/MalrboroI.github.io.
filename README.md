@@ -5,7 +5,7 @@ To launch the project, you will need to clone it to your working machine, and pe
 1) yarn install (This command will create a node_modules folder and install all the required packages specified in package.json.)
 2) yarn start (After installing the dependencies, run the project using the command specified in package.json under scripts. For example, if package.json contains a start script, run).
 
-Online page on http: https://3xv4zy-3000.csb.app/
+Online page on http: https://cp69fp-3000.csb.app/
 
 CodeSandBox page with the repository: https://codesandbox.io/p/github/MalrboroI/Project-Shop/main?import=true
 
