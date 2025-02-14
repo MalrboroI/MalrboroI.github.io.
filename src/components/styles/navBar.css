@@ -48,7 +48,6 @@
     opacity: 1;
     content: "Избранное ";
   }
-
 }
 
 .Logo:hover:after {
@@ -82,6 +81,8 @@
 }
 
 .Logo::after {
+  top: 0;
+  left: 0;
   opacity: 0;
   height: 44px;
   width: 17rem;
@@ -126,10 +127,10 @@
   }
 }
 
-@media (max-width: 715px) {
+@media (max-width: 1085px) {
   .Logo::before {
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 160px;
     opacity: 1;
     height: 3rem;
     width: 15rem;
@@ -149,6 +150,8 @@
   }
 
   .Logo::after {
+    top: 0px;
+    left: -80px;
     opacity: 0;
     height: 3rem;
     font-size: 18px;
@@ -156,7 +159,7 @@
     color: #67ff99;
     display: block;
     transition: 0.7s;
-    position: absolute;
+    position: relative;
     background: #59537749;
     content: attr(logostyle);
     transform: translateY(-50%) rotateX(90deg);
