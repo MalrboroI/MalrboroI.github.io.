@@ -6,9 +6,8 @@ export default class UserStore {
     this._user = {};
     makeAutoObservable(this);
   }
-  // создадим actions (это изменение состояния как setState)
   setIsAuth(bool) {
-    this._isAuth = bool; // передаем значение второму состоянию _isAuth
+    this._isAuth = bool;
   }
   setUser(user) {
     this._user = user;
