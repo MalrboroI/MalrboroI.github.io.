@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button, Nav } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import {
-  ADMIN_ROUTE,
   LOGIN_ROUTE,
   SHOP_ROUTE,
   BASKET_ROUTE,
@@ -10,9 +9,9 @@ import {
 import SearchToProduct from "../Search/searchToProduct";
 import LikedProductModal from "../../Modals/likePage/LikedProductModal";
 import productBasket from "../../../img/productCard.svg"
-import BurgerModal from "../../../img/Navigation/burgerModal.svg";
+import BurgerModalImg from "../../../img/Navigation/burgerModal.svg";
 
-export default function burgerModal({
+export default function BurgerModal({
   navigate,
   cardToLiked,
   setCardToLiked,
@@ -27,7 +26,7 @@ export default function burgerModal({
   return (
     <div className="burgerModal">
       <button onClick={handleShow} className="burgerModalBtn">
-        <img className="burgerModalImg" src={BurgerModal} alt="BurgerModal" />
+        <img className="burgerModalImg" src={BurgerModalImg} alt="BurgerModal" />
       </button>
       <Offcanvas
         className="offcanvas-top burgerModal"
@@ -72,14 +71,12 @@ export default function burgerModal({
               <img className="homeBtn" src={productBasket} alt="Basket" />
                   {cardToBasket.length}
             </Button>
-            {/* <div > */}
             <LikedProductModal
               cardToLiked={cardToLiked}
               setCardToLiked={setCardToLiked}
               cardToBasket={cardToBasket}
               setCardToBasket={setCardToBasket}
             ></LikedProductModal>
-            {/* </div> */}
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>

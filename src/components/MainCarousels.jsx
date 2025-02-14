@@ -22,7 +22,7 @@ export default function MainCarousels() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000} >
-      <img className="MainCarouselImg" src={Img3 }alt="Декоративная косметика" />
+      <img className="MainCarouselImg" src={Img3}alt="Декоративная косметика" />
         <Carousel.Caption className="MainCarouselText">
           <h2>Декоративная косметика</h2>
           <p>

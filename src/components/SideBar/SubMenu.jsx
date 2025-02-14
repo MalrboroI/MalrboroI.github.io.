@@ -71,9 +71,7 @@ export default function SubMenu({ item }) {
       {subnav &&
         item.subNav.map((item) => {
           return (
-            <DropdownLink to={PRODUCT_ROUTE + "/" + item.path} key={item.id}>
-              {item.icon}
-
+            <DropdownLink to={PRODUCT_ROUTE + "/" + item.path} key={item.id}> {item.icon}
               <SidebarLabel>{item.title}</SidebarLabel>
             </DropdownLink>
           );

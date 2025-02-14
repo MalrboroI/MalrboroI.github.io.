@@ -8,7 +8,7 @@ import "./components/styles/Main.css";
 export const Context = createContext(null);
 
 const value = {
-  user: new UserStore(), 
+  user: new UserStore(),
   dataArray: new ProductStore(),
 };
 

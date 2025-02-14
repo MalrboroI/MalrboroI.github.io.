@@ -8,6 +8,7 @@ import * as LiaCottonBureau from "react-icons/lia";
 
 export const SidebarData = [
   {
+    id: 1,
     title: "Уход",
     icon: <HiOutlineBeaker.HiColorSwatch />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -15,7 +16,7 @@ export const SidebarData = [
 
     subNav: [
       {
-        id: 1,
+        id: 2,
         title: "Для лица",
         path: "Уход",
         icon: <AiIcons.AiFillHome />,
@@ -24,6 +25,7 @@ export const SidebarData = [
 
         subPage: [
           {
+            id: 3,
             title: "Маски",
             path: "Маски",
             icon: <IoIcons.IoIosPaper />,
@@ -31,7 +33,7 @@ export const SidebarData = [
         ],
       },
       {
-        id: 2,
+        id: 4,
         title: "Активы",
         path: "Макияж",
         icon: <AiIcons.AiFillHome />,
@@ -39,6 +41,7 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
           {
+            id: 5,
             title: "Маски",
             path: "Маски",
             icon: <IoIcons.IoIosPaper />,
@@ -48,6 +51,7 @@ export const SidebarData = [
     ],
   },
   {
+    id: 6,
     title: "Декоративная косметика",
     // path: "services",
     icon: <LiaCottonBureau.LiaCottonBureau />,
@@ -56,14 +60,14 @@ export const SidebarData = [
 
     subNav: [
       {
-        id: 3,
+        id: 7,
         title: "Для глаз",
         path: "Макияж",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
-        id: 4,
+        id: 8,
         title: "Маски",
         path: "Маски",
         icon: <IoIcons.IoIosPaper />,
@@ -72,6 +76,7 @@ export const SidebarData = [
     ],
   },
   {
+    id: 9,
     title: "Парфюмерия",
     // path: "contact",
     icon: <HiOutlineBeaker.HiOutlineBeaker />,
@@ -80,19 +85,19 @@ export const SidebarData = [
 
     subNav: [
       {
-        id: 5,
+        id: 10,
         title: "Мужской парфюм",
         path: "Парфюмерия",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        id: 6,
+        id: 11,
         title: "Женский парфюм",
         path: "Парфюмерия",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        id: 7,
+        id: 12,
         title: "Унисекс",
         path: "Парфюмерия",
         icon: <IoIcons.IoIosPaper />,
@@ -100,6 +105,7 @@ export const SidebarData = [
     ],
   },
   {
+    id: 13,
     title: "Акции",
     icon: <IoIcons.IoMdPricetag />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -107,7 +113,7 @@ export const SidebarData = [
 
     subNav: [
       {
-        id: 8,
+        id: 14,
         title: "Со скидкой",
         path: "Макияж",
         icon: <IoIcons.IoIosPaper />,
@@ -118,11 +124,13 @@ export const SidebarData = [
 
 export const SidebarDataFooter = [
   {
+    id: 15,
     title: "Поддержка",
     path: "support",
     icon: <IoIcons.IoMdHelpCircle />,
   },
   {
+    id: 16,
     title: "Контакты",
     path: "contacts",
     icon: <FaIcons.FaPhone />,

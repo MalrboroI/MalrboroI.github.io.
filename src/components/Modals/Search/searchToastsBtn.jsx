@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Toast from "react-bootstrap/Toast";
 import PriceSelect from "../../Utilities/priceSelect";
 
-export default function searchToastsBtn({
+export default function SearchToastsBtn({
   sliderValue,
   setSliderValue,
   searchToCard,

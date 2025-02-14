@@ -9,7 +9,7 @@ import { Nav } from "react-bootstrap";
 import { IconContext } from "react-icons/lib";
 
 const SidebarNav = styled.nav`
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  left: ${({ sidebar }) => (sidebar === "true" ? "0" : "-100%")};
 `;
 
 const SidebarWrap = styled.div`
@@ -30,7 +30,10 @@ export default function Sidebar() {
           </Nav>
         </Nav>
 
-        <SidebarNav sidebar={sidebar} className="customSidebarNav">
+        <SidebarNav 
+        sidebar={sidebar ? "true" : "false"}
+        // sidebar={sidebar}
+        className="customSidebarNav">
           <SidebarWrap>
             <Nav to="#" className="NavIcon">
               <AiIcons.AiOutlineClose
@@ -44,7 +47,9 @@ export default function Sidebar() {
             })}
           </SidebarWrap>
 
-          <SidebarNav sidebar={sidebar} className="SubMenuFooter">
+          <SidebarNav 
+          sidebar={sidebar ? "true" : "false"}
+          className="SubMenuFooter">
             <SidebarWrap>
               {SidebarDataFooter.map((item) => {
                 return <SubMenuFooter item={item} key={item.id} />;
