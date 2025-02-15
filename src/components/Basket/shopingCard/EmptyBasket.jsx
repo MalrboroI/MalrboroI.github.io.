@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import productCard from "../../../img/productCard.svg";
 
-export default function EmptyBasket({ }) {
+export default function EmptyBasket() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,8 +12,13 @@ export default function EmptyBasket({ }) {
 
   return (
     <>
-      <Button  data-tip="Корзина товаров" className="NavBar-Btn" variant={"light"} onClick={handleShow}>
-      <img className="homeBtn" src={productCard} alt="Basket" />
+      <Button
+        data-tip="Корзина товаров"
+        className="NavBar-Btn"
+        variant={"light"}
+        onClick={handleShow}
+      >
+        <img className="homeBtn" src={productCard} alt="Basket" />
       </Button>
 
       <Modal
@@ -29,7 +34,7 @@ export default function EmptyBasket({ }) {
           <img src={Basket} alt="BasketImg" />
         </Modal.Header>
         <Modal.Footer>
-          <Button className="btnClose"  onClick={handleClose}>
+          <Button className="btnClose" onClick={handleClose}>
             Продолжить покупки
           </Button>
         </Modal.Footer>
