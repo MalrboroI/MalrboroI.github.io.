@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +27,7 @@ const LikedCard = ({ item, setCardToLiked, cardToBasket, setCardToBasket }) => {
   return (
     <section className="product">
       <a href="" onClick={() => navigate(CARD_ROUTE + "/" + item.id)}>
-        <img className="imgShopingCard" src={item.img1}></img>
+        <img className="imgShopingCard" src={item.img1} alt="imgCard" />
       </a>
       <div className="product__title">{item.name}</div>
       {cardToBasket.find((card) => card.id === item.id) ? (

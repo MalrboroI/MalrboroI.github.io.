@@ -130,6 +130,14 @@
 
 /* LikedCard */
 
+/* .btnCardImg{
+  padding: 0;
+  width: 14rem;
+  height: 10rem;
+  background-color: transparent;
+  border: 0;
+} */
+
 .imgShopingCard{
   padding-left: 3rem;
   width: 14rem;

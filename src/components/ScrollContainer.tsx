@@ -33,7 +33,7 @@ export default function ScrollContainer() {
       current?.removeEventListener("scroll", debounceCheckForScrollPosition);
       debounceCheckForScrollPosition.cancel();
     };
-  }, []);
+  }, [debounceCheckForScrollPosition]);
 
   return (
     <div className="scrollContainer">

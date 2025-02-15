@@ -69,15 +69,15 @@ const CardItem = ({ card }) => {
     <li className="CardLi">
       <Row className="product-grid">
         <Card className="item" src="№">
-          <Image className="pic-1" src={card.img1} />
-          <Image className="pic-2" src={card.img2} />
+          <Image className="pic-1" src={card.img1} alt="imgCard" />
+          <Image className="pic-2" src={card.img2} alt="imgCard" />
           <Button
             className="product-like-icon"
             data-tip="Переместить в избраное"
             onClick={() => addToLiked(card)}
           >
             {cardToLiked.find((item) => item.id === card.id) ? (
-              <img src={heartActive}></img>
+              <img src={heartActive} alt="imgCard"></img>
             ) : (
               <i className="far fa-heart"> </i>
             )}
@@ -95,16 +95,13 @@ const CardItem = ({ card }) => {
                     type="button"
                     onClick={() => minusOneCard(card.id)}
                   >
-                    <img src={Minus}></img>
+                    <img src={Minus} alt="imgMinus"></img>
                   </Button>
                 </li>
                 <li>
-                  <a
-                    href=""
-                    onClick={() => navigate(CARD_ROUTE + "/" + card.id)}
-                  >
+                  <Button className="BuyBtn" onClick={() => navigate(CARD_ROUTE + "/" + card.id)}>
                     <i className="fa fa-search"></i>
-                  </a>
+                  </Button>
                 </li>
                 <li>
                   <Button
@@ -112,7 +109,7 @@ const CardItem = ({ card }) => {
                     type="button"
                     onClick={() => plusOneCard(card.id)}
                   >
-                    <img src={Plus}></img>
+                    <img src={Plus} alt="imgPlus"></img>
                   </Button>
                 </li>
               </ul>
@@ -121,12 +118,9 @@ const CardItem = ({ card }) => {
             <div>
               <ul className="product-links">
                 <li>
-                  <a
-                    href=""
-                    onClick={() => navigate(CARD_ROUTE + "/" + card.id)}
-                  >
+                  <Button className="BuyBtn" onClick={() => navigate(CARD_ROUTE + "/" + card.id)}>
                     <i className="fa fa-search"></i>
-                  </a>
+                  </Button>
                 </li>
                 <li>
                   <Button
@@ -137,11 +131,11 @@ const CardItem = ({ card }) => {
                     <i className="fas fa-shopping-cart"></i>
                   </Button>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <i className="fa fa-random"></i>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           )}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Counter = ({ product, cardToBasket, setCardToBasket }) => {
   const plusOneCard = (id) => {
@@ -16,8 +16,7 @@ const Counter = ({ product, cardToBasket, setCardToBasket }) => {
     let currentCounter = cardToBasket.find((item) => item.id === id)?.count;
     if (currentCounter === 1) {
       setCardToBasket((prev) => prev.filter((item) => item.id !== id));
-    } 
-    else {
+    } else {
       setCardToBasket((prev) =>
         prev.map((item) => {
           if (item.id === id) {
@@ -26,7 +25,7 @@ const Counter = ({ product, cardToBasket, setCardToBasket }) => {
           return item;
         })
       );
-    };
+    }
   };
 
   const productCount = (id) => {

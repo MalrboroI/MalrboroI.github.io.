@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export default function errorNotification(CounterNum) {
+export default function ErrorNotification(CounterNum) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

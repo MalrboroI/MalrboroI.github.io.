@@ -16,19 +16,19 @@ export default function Footer() {
         </div>
 
         <div>
-          <a href="" className="me-4">
+          <a href="http://facebook.com.vn" className="me-4">
             <MDBIcon color="secondary" fab icon="facebook-f" />
           </a>
-          <a href="" className="me-4">
+          <a href="https://en.wikipedia.org/wiki/Twitter" className="me-4">
             <MDBIcon color="secondary" fab icon="twitter" />
           </a>
-          <a href="" className="me-4">
+          <a href="https://www.google.ru/" className="me-4">
             <MDBIcon color="secondary" fab icon="google" />
           </a>
-          <a href="" className="me-4">
+          <a href="https://about.instagram.com/" className="me-4">
             <MDBIcon color="secondary" fab icon="instagram" />
           </a>
-          <a href="" className="me-4">
+          <a href="https://web.whatsapp.com/" className="me-4">
             <MDBIcon color="secondary" fab icon="whatsapp" />
           </a>
         </div>
@@ -119,7 +119,11 @@ export default function Footer() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         © 2024 Copyright:
-        <a className="linkFooter fw-bold" href="#" alt="GreenApple.ru">
+        <a
+          className="linkFooter fw-bold"
+          href="https://GreenApple.ru"
+          alt="GreenApple.ru"
+        >
           GreenApple.ru
         </a>
       </div>

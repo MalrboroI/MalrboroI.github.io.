@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useContext, useState } from "react";
 import { Context } from "../index";
 import { Container, Row } from "react-bootstrap";

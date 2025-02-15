@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React, { useContext } from "react";
 import TabMain from "../components/TabsMain";
 import { Context } from "../index";
